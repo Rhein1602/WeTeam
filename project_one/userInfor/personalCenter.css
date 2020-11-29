@@ -1,0 +1,479 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    align-items: center;
+}
+
+.nav {
+    position: fixed;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right, #50a3a2, #53e3a6, #50a3a2);
+    z-index: 1;
+
+}
+
+.navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list {
+    list-style: none;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav-ico {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+.nav-title span {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+
+}
+
+.nav-list-li {
+    justify-content: space-between;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 10px;
+    height: 40px;
+    line-height: 40px;
+    width: 100px;
+    text-align: center;
+
+}
+
+.nav-list li a {
+    text-decoration: none;
+}
+
+.nav-list-li a:hover {
+    color: #ffffff;
+}
+
+.nav-active {
+    /*background-color: aqua;*/
+    color: black;
+    font-size: 18px;
+}
+
+.bar-list {
+    display: flex;
+    margin-right: 10px;
+    align-items: center;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /* background-color: blueviolet;*/
+}
+
+.bar-list-log a {
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 10px;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+.bar-list-log a:hover {
+    color: #ffffff;
+}
+
+.bar-list-search {
+    margin-right: 70px;
+}
+
+.logout {
+    display: none;
+}
+
+.usename {
+    display: none;
+}
+
+.form {
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    border: 2px solid #8d9499;
+    background-color: #ffffff;
+}
+
+.search {
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+.search:focus {
+    outline: none;
+}
+
+.search-icon {
+
+    width: 30px;
+    height: 30px;
+    background-size: 30px 30px;
+    border-radius: 10px;
+    background: url(home/搜索.png);
+    border: none;
+    padding-right: 5px;
+    background-size: cover;
+
+}
+
+.search-icon:focus {
+    outline: none;
+}
+
+.container{
+    width: 980px;
+   
+    margin: 10px auto 100px;
+    margin-top: 70px;
+    border: 1px solid #e1e2e5;
+    box-shadow: 0 2px 4px rgba(0,0,0,.14);
+    background: #fafafa;
+    border-radius: 4px;
+}
+.person-left{
+    float: left;
+    width: 150px;
+   /* height: 100%;
+    overflow: hidden;*/
+}
+.person-title{
+    display: block;
+    width: 150px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 16px;
+    color: #99a2aa;
+    cursor: default;
+    border-bottom: 1px solid #e1e2e5;
+}
+.person-item{
+    width: 150px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+.item-name{
+    margin-left: 12px;
+    font-size: 14px;
+}
+.person-items{
+    list-style: none;
+    cursor: pointer;
+    border-bottom: 1px solid #e1e2e5;
+}
+.on{
+    background-color: #00a1d7!important;
+    color: #fff;
+}
+.person-right{
+    display: none;
+    float: left;
+    width: 829px;
+
+    border-left: 1px solid #ddd;
+    background: #fff;
+    min-height: 890px!important;
+}
+.person-right-active{
+    display: block;
+}
+.person-right-title{
+    height: 50px;
+    padding-left: 30px;
+    border-bottom: 1px solid #ddd;
+}
+.person-right-title-name{
+    float: left;
+    margin: 15px 0 0 5px;
+    color: #00a1d6;
+    font-size: 14px;
+    cursor: default;
+}
+.game-nav{
+    margin: 0 auto;
+    border-bottom: 1px solid #e5e9ef;
+    height: 32px;
+
+}
+.game-item{
+    padding: 6px 0;
+    float: left;
+    margin-right: 25px;
+    line-height: 20px;
+}
+.active{
+    padding: 6px 0 5px;
+    border-bottom: 1px solid #00a1d6;
+    position: relative;
+}
+.active::after{
+    width: 5px;
+    height: 3px;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    margin-left: -2px;
+    background-color:  #00a1d6;
+}
+.game-item a{
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+}
+.active a{
+    color: #00a1d6;
+}
+.person-right-bottom{
+    padding: 0 20px;
+    height: auto;
+}
+.game-container{
+    padding-top: 10px;
+    height: 800px;
+}
+.game-lists{
+    list-style: none;
+}
+.game-list{
+    width: 233px;
+    height: 200px;
+    box-sizing: border-box;
+    border: 1px solid #e5e9ef;
+    border-radius: 4px;
+    float: left;
+    margin: 0 29px 20px 0;
+    cursor: pointer;
+}
+.game-name{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 6px 10px 4px 10px;
+    font-size: 14px;
+    color: #424242;
+    line-height: 18px;
+    text-align: left;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.game-img{
+    display: block;
+    width: 233px;
+    height: 150px;
+}
+.game-list:hover{
+    transform: translateZ(10px);
+    box-shadow: 1px 1px 10px #00a1d6;
+}
+.game-item a{
+    text-decoration: none;
+}
+.sponsor-form{
+    display: block;
+    clear:both;
+    margin:0;
+    padding:0;
+
+}
+.sponsor-form::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+}
+/*伪元素撑开表单*/
+.student-form::after{
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+ 
+}
+.student-form{
+    display: block;
+    clear:both;
+    margin:0;padding:0;
+ 
+}
+.sponsor-info{
+    padding: 20px 20px 0;
+    position: relative;
+    display: block;
+    clear:both;
+}
+.student-info{
+    display: none;
+    padding: 20px 20px 0;
+    position: relative;
+ 
+    clear:both;
+}
+.info-box{
+    float: left;
+    width: 789px;
+    clear:both;
+    margin-bottom: 22px;
+}
+.info-text{
+    width: 95px;
+    text-align: right;
+    margin-right: 20px;
+    float: left;
+    line-height: 30px;
+    cursor: default;
+}
+.info-input{
+    float: left;
+    width: 225px;
+    height: 30px;
+    margin-right: 40px;
+    appearance: none;
+    background-color: #fff;
+    background-image: none;
+    border-radius: 4px;
+    border: 1px solid #bfcbd9;
+    box-sizing: border-box;
+    color: #1f2d3d;
+    font-size: inherit;
+    line-height: 1;
+    outline: 0;
+    padding: 3px 10px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+}
+
+.info-input:hover{
+    border-color: #8391a5;
+}
+.info-input:focus{
+    outline: 0;
+    border-color: #20a0ff;
+}
+.info-textarea{
+    float: left;
+    width: 618px;
+    height: 88px;
+    resize: none;
+    display: block;
+    color: #1f2d3d;
+    padding: 5px 7px;
+    line-height: 1.5;
+    font-size: 14px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #bfcbd9;
+    border-radius: 4px;
+    transition: border-color .2s cubic-bezier(.645,.045,.355,1);
+}
+.info-textarea:hover{
+    border-color: #8391a5;
+}
+.info-textarea:focus{
+    outline: 0;
+    border-color: #20a0ff;
+}
+.info-btn-box{
+    float: left;
+    width: 789px;
+    height: 36px;
+    position: relative;
+}
+.info-line{
+    width: 789px;
+    height: 39px;
+    border-bottom: 1px solid #e5e9ef;
+    margin-bottom: 40px;
+}
+.info-btn{
+    font-size: 14px;
+    width: 110px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #00a1d6!important;
+    color: #fff;
+    border:1px solid #20a0ff;
+    display: inline-block;
+    line-height: 1;
+    white-space: nowrap;
+    cursor: pointer;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    outline: 0;
+    text-align: center;
+}
+.info-btn:hover{
+    background-color: #00b5e5!important;
+}
+.sex{
+    display: inline-block;
+}
+.radio{
+    color: #000;
+    position: relative;
+    display: inline-block;
+    margin-right: 20px;
+}
+.radio-btn{
+
+    opacity: 0;
+    outline: none;
+    position: absolute;
+    z-index: -1;
+    left: -999px;
+}
+.radio-btn:checked+.radio-text{
+    color: #fff;
+    background-color: #22a1d6!important;
+}
+.radio-text{
+    display: inline-block;
+    border: 1px solid #bfcbd9;
+    border-radius: 5px;
+    background: #f4f4f4;
+    font-size: 14px;
+    padding: 5px 8px;
+    transition: all 0.3s cubic-bezier(.645,.045,.355,1);
+    line-height: 1;
+    vertical-align: middle;
+}

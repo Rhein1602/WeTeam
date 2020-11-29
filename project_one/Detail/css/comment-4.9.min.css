@@ -1,0 +1,670 @@
+@charset "utf-8";
+.discuss-box {
+    width: 810px;
+    height: 40px;
+    margin: 0 auto
+}
+
+.discuss-box .post-btn {
+    display: inline-block;
+    font-size: 14px;
+    color: #999;
+    padding: 15px 0 6px;
+    margin-right: 40px;
+    border-bottom: 2px solid transparent
+}
+
+.discuss-box .post-btn:hover {
+    color: #be1a95;
+    border-bottom: 2px solid #be1a95
+}
+
+.dis-max-hot-box {
+    width: 812px;
+    margin: 0 auto
+}
+
+.dis-hot-comment-box {
+    margin: 0 0 110px 10px
+}
+
+.dis-hot-box {
+    width: 800px
+}
+
+.discuss-sub-btn {
+    font-size: 18px!important;
+    color: #888
+}
+
+.event-comment-form {
+    height: 0;
+    overflow: hidden;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    transition: all .4s ease
+}
+
+.event-comment-form.show {
+    overflow: initial;
+    height: 261px
+}
+
+.text-oper-input-box {
+    padding-top: 50px
+}
+
+.text-oper-input {
+    min-height: 140px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    position: relative
+}
+
+.text-oper-input label.error {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -14px;
+    font-size: 12px
+}
+
+.text-oper-input .text-lt {
+    position: absolute;
+    left: 15px;
+    top: 15px;
+    font-size: 14px;
+    color: #d3d3d3;
+    padding: 0 2px;
+    -webkit-transition: all .2s linear;
+    -moz-transition: all .2s linear;
+    -ms-transition: all .2s linear;
+    transition: all .2s linear;
+    cursor: text
+}
+
+.face-btn-box, .face-btn-box .emoji, .goto-comment, .o-turn-box {
+    position: relative
+}
+
+.text-oper-input .input-text {
+    border-radius: 4px;
+    padding: 15px;
+    height: 140px;
+    background: #fff;
+    border: 1px solid #e6e6e6
+}
+
+.text-oper-input.active .text-lt {
+    top: -8px;
+    font-size: 12px;
+    background: #fff;
+    color: #be1a95
+}
+
+.face-btn-box .emoji, .face-btn-box .emoji a {
+    display: block;
+    width: 20px;
+    height: 20px
+}
+
+.face-btn-box .emoji .smile-face {
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    background-image: url(../img/sk_icon2x_4.9.png);
+    background-size: 50px;
+    background-position: 0 -2150px
+}
+
+.o-turn-box {
+    margin-top: 30px;
+    height: 55px;
+    border-top: 1px solid #e6e6e6;
+    font-size: 12px
+}
+
+.o-turn-para {
+    line-height: 55px;
+    color: #999;
+    font-size: 12px
+}
+
+.o-turn-data {
+    color: #be1a95
+}
+
+.o-turn {
+    color: #999;
+    cursor: pointer
+}
+
+.o-turn.active, .o-turn:hover {
+    color: #be1a95
+}
+
+.goto-comment {
+    padding-left: 20px;
+    line-height: 55px;
+    color: #333
+}
+
+.comment-list .note-comment {
+    margin-bottom: 20px;
+    border-top: 1px solid #e6e6e6;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555
+}
+
+.note-comment .meta-top {
+    padding-top: 30px;
+    margin: 0 0 10px
+}
+
+.note-comment .meta-top .avater {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px
+}
+
+.meta-top .avater img {
+    width: 100%;
+    height: 100%;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-sizing: border-box
+}
+
+.meta-top .motto {
+    margin-top: 3px
+}
+
+.note-comment .para {
+    margin-bottom: 22px
+}
+
+small {
+    font-size: 85%
+}
+
+.comment-footer .agree, .comment-footer .reply {
+    padding-left: 20px;
+    position: relative;
+    font-size: 13px;
+    color: #666
+}
+
+.comment-footer .agree.active i, .cp-show-detail-box .agree.active i {
+    background-position: -3px -298px
+}
+
+.comment-footer .agree i, .cp-show-detail-box .agree i {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: 0;
+    background-position: -3px -282px
+}
+
+.comment-footer .report {
+    position: relative;
+    margin-right: 15px;
+    display: none
+}
+
+.comment-footer .report-comment:hover {
+    color: #f22
+}
+
+.comment-footer .reply, .comment-footer .report {
+    font-size: 13px;
+    color: #666
+}
+
+.note-comment .content:hover .report {
+    display: block
+}
+
+.comment-add-more.hide, .edit-form-box .face-btn-box.hid, .put-comment-away {
+    display: none
+}
+
+.comment-footer .reply .edit-icon {
+    top: 3px
+}
+
+.child-comment-list {
+    border-top: 1px dashed #e6e6e6
+}
+
+.child-comment-item {
+    padding: 13px 0 0 20px;
+    border-bottom: 1px dashed #e6e6e6;
+    border-left: 3px solid #e6e6e6;
+    font-size: 13px
+}
+
+.child-comment-item .auter-name {
+    font-size: 14px;
+    color: #be1a95
+}
+
+.child-comment-item .para {
+    color: #666;
+    margin: 10px 0 20px
+}
+
+.auter-name-para span {
+    font-size: 14px;
+    color: #333;
+    margin: 0 8px
+}
+
+.child-comment-item .comment-footer .agree {
+    padding-left: 0
+}
+
+.child-comment-item .other-comment {
+    height: 24px;
+    line-height: 24px;
+    color: #aaa;
+    font-size: 13px;
+    padding-bottom: 13px
+}
+
+.child-comment-item .other-comment a {
+    color: #be1a95
+}
+
+.child-comment-item .goto-comment {
+    line-height: 24px
+}
+
+.child-comment-item .common-textarea textarea {
+    padding: 10px 15px;
+    height: 70px;
+    margin-top: 10px
+}
+
+.child-comment-item .face-btn-box, .edit-form-box .face-btn-box {
+    position: relative;
+    padding: 0;
+    margin: 6px 0 0
+}
+
+.child-comment-item .face-btn-box .sk-btn, .edit-form-box .face-btn-box .sk-btn {
+    width: 56px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px
+}
+
+.edit-form-box .common-textarea textarea {
+    height: 120px;
+    margin-top: 10px;
+    padding: 10px 15px
+}
+
+.edit-form-box .face-btn-box {
+    margin-top: 20px
+}
+
+.comment-add-more .sk-btn {
+    width: 760px
+}
+
+.comment-add-more .sk-btn:hover {
+    color: #fff;
+    background: #be1a95
+}
+
+.common-icon.edit-icon.goto {
+    top: 20px;
+    background-position: -3px -314px
+}
+
+.put-comment-away .put-away {
+    padding-right: 18px;
+    position: relative
+}
+
+.put-comment-away a i {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    top: 2px;
+    right: 0;
+    background-position: -146px -188px
+}
+
+.edit-form-box .common-textarea.edit-form-min textarea {
+    height: 40px;
+    line-height: 18px
+}
+
+.edit-form-box .common-textarea.edit-form-min textarea.high {
+    height: 120px
+}
+
+.reply-new-list .meta-top {
+    padding-top: 30px;
+    margin: 0 0 10px
+}
+
+.news-center-inform-box .avatar, .reply-new-list .meta-top .avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: block;
+    margin-right: 10px
+}
+
+.reply-new {
+    margin-bottom: 20px;
+    border-top: 1px solid #e6e6e6;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555
+}
+
+.reply-new.hide {
+    display: none
+}
+
+.meta-top .avatar img {
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc;
+    border-radius: 50%;
+    box-sizing: border-box
+}
+
+.meta-top .auter-name {
+    font-size: 18px;
+    color: #333
+}
+
+.c-auter-peo-btn {
+    border: 1px solid #be1a95;
+    color: #be1a95;
+    border-radius: 15px;
+    line-height: 21px;
+    margin-left: 10px;
+    padding: 0 12px;
+    font-size: 12px;
+    height: 19px
+}
+
+.meta-top .motto, .news-center-inform-box .white-time {
+    font-size: 13px;
+    color: #999;
+    display: inline-block
+}
+
+.meta .agree, .meta .report, .new-common-item .comment-widget {
+    display: none
+}
+
+.reply-new .para {
+    margin-bottom: 15px;
+    color: #555;
+    font-size: 16px;
+    line-height: 22px
+}
+
+.reply-new img {
+    max-width: 100%;
+    height: auto!important
+}
+
+.comment-footer {
+    margin-bottom: 18px
+}
+
+.reply-time {
+    font-size: 12px;
+    color: #999;
+    margin-right: 10px
+}
+
+.meta {
+    margin-bottom: 6px;
+    font-size: 13px
+}
+
+.amend-time, .meta .agree, .meta .reply, .meta .report {
+    padding-left: 20px;
+    position: relative;
+    font-size: 13px;
+    color: #999;
+    margin-left: 20px
+}
+
+.amend-time {
+    font-size: 12px;
+    line-height: 20px
+}
+
+.amend-time .edit-icon {
+    top: 4px
+}
+
+.meta .agree:hover, .meta .reply:hover, .meta .report:hover {
+    color: #333
+}
+
+.meta .agree.active i {
+    background-position: -3px -298px
+}
+
+.meta .agree i {
+    width: 20px;
+    height: 12px;
+    position: absolute;
+    top: 50%;
+    margin-top: -7px;
+    left: 0;
+    background-position: -3px -282px
+}
+
+.meta .reply .edit-icon {
+    top: 1px
+}
+
+.edit-icon {
+    width: 13px;
+    height: 13px;
+    position: absolute;
+    left: 0;
+    background-position: -163px -132px
+}
+
+.new-common-list {
+    position: relative
+}
+
+.to-form-box {
+    position: absolute;
+    left: 0;
+    bottom: 300px
+}
+
+.load-more-box, .new-common-item {
+    padding: 13px 0 10px 20px;
+    border-bottom: 1px dashed #e6e6e6;
+    border-left: 3px solid #e6e6e6;
+    font-size: 13px
+}
+
+.new-common-item:first-of-type {
+    border-top: 1px dashed #e6e6e6
+}
+
+.new-common-item .comment-widget.show {
+    display: block
+}
+
+.comment-widget, .new-common-item.hide, .reply-util .comment-widget .widget-f.hide {
+    display: none
+}
+
+.i-cont .i-auter {
+    font-size: 14px;
+    color: #be1a95
+}
+
+.reply-util .i-cont .i-cont-p {
+    font-size: 14px;
+    color: #333
+}
+
+.reply-util .i-cont .para {
+    font-size: 13px;
+    color: #666
+}
+
+.new-common-item .para {
+    color: #666;
+    margin: 6px 0 10px
+}
+
+.comment-widget {
+    padding: 10px 0
+}
+
+.new-common-item .common-textarea textarea {
+    padding: 8px 15px;
+    height: 74px;
+    margin-top: 10px
+}
+
+.textarea-widget:focus {
+    border-color: #be1a95
+}
+
+.textarea-widget::-webkit-input-placeholder {
+    color: #999
+}
+
+.textarea-widget:-moz-placeholder {
+    color: #999
+}
+
+.textarea-widget::-moz-placeholder {
+    color: #999
+}
+
+.textarea-widget:-ms-input-placeholder {
+    color: #999
+}
+
+.reply-util .i-cont .comment-widget .textarea-widget {
+    width: 748px;
+    height: 74px
+}
+
+.reply-util .comment-widget .textarea-widget {
+    width: 768px;
+    height: 24px
+}
+
+.reply-util .comment-widget .textarea-widget.high {
+    height: 74px
+}
+
+.textarea-widget {
+    height: 74px;
+    line-height: 24px;
+    border: 1px solid #dedede;
+    padding: 10px 15px;
+    width: 100%;
+    border-radius: 3px;
+    overflow-y: auto;
+    overflow-x: hidden
+}
+
+.reply-util .comment-widget .widget-f {
+    margin-top: 8px;
+    position: relative
+}
+
+.board-func-btn {
+    padding-left: 40px;
+    line-height: 36px;
+    height: 36px;
+    position: relative;
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: 16px
+}
+
+.board-func-btn .common-icon {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/sk_icon2x_4.9.png);
+    background-size: 50px;
+    background-position: 0 -2150px
+}
+
+.reply-util .widget-f .sk-btn {
+    min-width: 56px;
+    height: 40px;
+    line-height: 40px;
+    margin-left: 10px
+}
+
+.load-more-box .other-comment {
+    height: 24px;
+    line-height: 24px;
+    color: #aaa;
+    font-size: 13px
+}
+
+.load-more-box .other-comment a {
+    color: #be1a95
+}
+
+.common-icon.edit-icon.reply {
+    background-position: -3px -314px;
+    top: 5px
+}
+
+.load-more-box .goto-comment {
+    line-height: 24px;
+    display: none
+}
+
+.cp-show-more-btn {
+    display: block;
+    color: #666;
+    font-size: 14px;
+    height: 46px;
+    text-align: center;
+    width: 100%;
+    background: #eee;
+    border: 1px solid #e5e5e5;
+    cursor: pointer
+}
+
+.cp-show-more.hide, .empty-page-box.hide {
+    display: none
+}
+
+.dis-max-hot-box .empty-page-box {
+    padding: 30px 0
+}
+
+.empty-comment-img {
+    margin: 0 auto;
+    height: 88px;
+    background: url(../img/empty-comment.png) center center no-repeat
+}

@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+    <title>HomePage</title>
+    <!--//在网页标题左侧显示图标//在收藏夹显示图标-->
+    <link rel="icon" href="home/图标.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="home/图标.ico" type="image/x-icon">
+
+
+    <link rel="stylesheet" href="home.css">
+
+</head>
+
+<body>
+
+    <!--导航栏-->
+    <div class="nav">
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-list-title"> <a class="nav-title" href="#">
+                        <img class="nav-ico" src="home/图标.jpg" />
+                        <span class="title">WeTeam</span>
+                    </a>
+                </li>
+                <li class="nav-list-li"> <a href="#" class="nav-active">home</a></li>
+                <li class="nav-list-li"> <a href="#">competition</a></li>
+                <li class="nav-list-li"> <a href="#">activity</a></li>
+                <!--<li class="nav-list-li"> <a href="#">lesson</a></li>-->
+                <!--<li class="nav-list-li"> <a href="#">book</a></li>-->
+                <!--<li class="nav-list-li"> <a href="#">question</a></li>-->
+                <!--<li class="nav-list-li"> <a href="#">community</a></li>-->
+                <li class="nav-list-li" id="create"> <a href="#">create</a></li>
+            </ul>
+            <ul class="bar-list">
+                <li class="bar-list-search">
+                    <form class="form" action="">
+                        <!--<input class="search" type="text" placeholder="请输入关键词" name="search" />-->
+                        <input class="search-icon" type="submit" value />
+                    </form>
+                </li>
+                <li class="bar-list-log">
+                    <a href="login/register.html" class="register">register</a>
+                    <a href="login/login.html" class="login">login</a>
+                    <a href="userInfor/personalCenter.html" class="usename">username</a>
+                    <a href="javascript: logout()" class="logout">logout</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--缩小的导航栏-->
+    <div class="min-nav">
+        <nav class="min-navbar">
+            <a class="nav-title" href="#">
+                <img class="nav-ico" src="home/图标.jpg" />
+                <span class="title">WeTeam</span>
+            </a>
+            <ul class="min-bar-list">
+                <li class="min-nav-ico"><span class="iconfont">&#xe669;</span></li>
+                <li class="min-bar-list-log">
+                    <a href="login/register.html" class="register">register</a>
+                    <a href="login/login.html" class="login">login</a>
+                    <a href="#" class="usename">username</a>
+                    <a href="#" class="logout">logout</a>
+                </li>
+                <li class="min-nav-list-li"> <a href="#" class="nav-active">home</a></li>
+                <li class="min-nav-list-li"> <a href="#">competition</a></li>
+                <!--<li class="min-nav-list-li"> <a href="#">activity</a></li>-->
+                <!--<li class="min-nav-list-li"> <a href="#">lesson</a></li>-->
+                <!--<li class="min-nav-list-li"> <a href="#">book</a></li>-->
+                <!--<li class="min-nav-list-li"> <a href="#">question</a></li>-->
+                <!--<li class="min-nav-list-li"> <a href="#">community</a></li>-->
+                <li class="min-nav-list-li" > <a href="#">create</a></li>
+                <li class="min-bar-list-search">
+                    <form class="form" action="">
+                        <!--<input class="search" type="text" placeholder="请输入关键词" name="search" />-->
+                        <input class="search-icon" type="submit" value />
+                    </form>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <!--轮播图-->
+
+    <div class="imgs">
+        <!--图片-->
+        <div id="slidebox" class="slidebox">
+
+            <div id="slideshow" class="slideshow"></div>
+                <!--
+            <a href="#"> <img class="slideimg" /></a>
+            <a href="#"> <img class="slideimg" /></a>
+            <a href="#"> <img class="slideimg" /></a>
+            -->
+            
+        </div>
+        <!--圆点-->
+        <div id="dot" class="dot">
+            <!--
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            -->
+        </div>
+        <!--左右按钮-->
+        <div class="btn">
+            <div id="left" class="left iconfont">&#xe717;</div>
+            <div id="right" class="right iconfont">&#xe718;</div>
+        </div>
+    </div>
+    <!--推荐比赛-->
+    <div class="re-game">
+        <a href="#" target="_blank" class="recommond">matches</a>
+        <a href="#" class="re" target="_blank">Languages</a>
+        <a href="#" class="re" target="_blank">math model</a>
+        <a href="#" class="re" target="_blank">Programming</a>
+        <a href="#" class="re" target="_blank">other</a>
+        <a href="#" class="all-game" target="_blank">all competitions&gt;</a>
+        <div class="num-box"><i class="num">4521</i> competitions in total</div>
+    </div>
+
+    <div class="games">
+        <a href="Detail/Details.html?id=0003" class="game">
+            <span class="game-title-1">
+                <img class="game-img" src="home/比赛1.png" alt="">
+
+            </span>
+            <span class="game-sponsor">主办方:西北工业大学</span>
+            <span class="game-handle">
+
+                <span style="margin-right: 10px; margin-left: 40px;"><span class="iconfont">&#xe679;</span>123</span>
+
+                <span style="margin-right: 10px;"> <span class="iconfont">&#xe675;</span>123</span>
+
+                <span style="margin-right: 40px; "><span class="iconfont">&#xe664;</span>123</span>
+            </span>
+        </a>
+        <a href="Detail/Details.html?id=0003" class="game">
+            <span class="game-title-2">
+                <img class="game-img" src="home/竞赛2.png" alt="">
+            </span>
+            <span class="game-sponsor">主办方:西北工业大学</span>
+            <span class="game-handle">
+
+                <span style="margin-right: 10px; margin-left: 40px;"><span class="iconfont">&#xe679;</span>123</span>
+
+                <span style="margin-right: 10px;"> <span class="iconfont">&#xe675;</span>123</span>
+
+                <span style="margin-right: 40px; "><span class="iconfont">&#xe664;</span>123</span>
+            </span>
+        </a>
+        <a href="Detail/Details.html?id=0003" class="game">
+            <span class="game-title-3">
+                <img class="game-img" src="home/竞赛3.jpg" alt="">
+            </span>
+            <span class="game-sponsor">主办方:西北工业大学</span>
+            <span class="game-handle">
+
+                <span style="margin-right: 10px; margin-left: 40px;"><span class="iconfont">&#xe679;</span>123</span>
+
+                <span style="margin-right: 10px;"> <span class="iconfont">&#xe675;</span>123</span>
+
+                <span style="margin-right: 40px; "><span class="iconfont">&#xe664;</span>123</span>
+            </span>
+        </a>
+        <a href="Detail/Details.html?id=0003" class="game">
+            <span class="game-title-4">
+                <img class="game-img" src="home/竞赛4.png" alt="">
+            </span>
+            <span class="game-sponsor">主办方:西北工业大学</span>
+            <span class="game-handle">
+
+                <span style="margin-right: 10px; margin-left: 40px;"><span class="iconfont">&#xe679;</span>123</span>
+
+                <span style="margin-right: 10px;"> <span class="iconfont">&#xe675;</span>123</span>
+
+                <span style="margin-right: 40px; "><span class="iconfont">&#xe664;</span>123</span>
+            </span>
+        </a>
+    </div>
+    <!--推荐活动-->
+    <div class="re-activity">
+        <a href="#" target="_blank" class="re-name">activities</a>
+        <a href="#" class="re-one" target="_blank">Languages</a>
+        <a href="#" class="re-one" target="_blank">math model</a>
+        <a href="#" class="re-one" target="_blank">Programming</a>
+        <a href="#" class="re-one" target="_blank">other</a>
+        <a href="#" class="all-game" target="_blank">all competitions&gt;</a>
+        <div class="num-box"><i class="num">4521</i> competitions in total</div>
+    </div>
+
+    <div class="games">
+        <a href="" class="game">
+            <span class="game-title-5">
+                <img class="game-img" src="home/活动1.png" alt="">
+            </span>
+            <span class="game-sponsor">主办方:软件学院</span>
+            <span class="game-handle">
+
+                <span style="margin-right: 10px; margin-left: 40px;"><span class="iconfont">&#xe679;</span>123</span>
+
+                <span style="margin-right: 10px;"> <span class="iconfont">&#xe675;</span>123</span>
+
+                <span style="margin-right: 40px; "><span class="iconfont">&#xe664;</span>123</span>
+            </span>
+        </a>
+        <a href="" class="game">
+            <span class="game-title-6">
+                <img class="game-img" src="home/合作2.png" alt="">
+            </span>
+            <span class="game-sponsor">主办方:软件学院</span>
+            <span class="game-handle">
+
+                <span style="margin-right: 10px; margin-left: 40px;"><span class="iconfont">&#xe679;</span>123</span>
+
+                <span style="margin-right: 10px;"> <span class="iconfont">&#xe675;</span>123</span>
+
+                <span style="margin-right: 40px; "><span class="iconfont">&#xe664;</span>123</span>
+            </span>
+        </a>
+        <a href="" class="game">
+            <span class="game-title-7">
+                <img class="game-img" src="home/活动3.png" alt="">
+            </span>
+            <span class="game-sponsor">主办方:软件学院</span>
+            <span class="game-handle">
+
+                <span style="margin-right: 10px; margin-left: 40px;"><span class="iconfont">&#xe679;</span>123</span>
+
+                <span style="margin-right: 10px;"> <span class="iconfont">&#xe675;</span>123</span>
+
+                <span style="margin-right: 40px; "><span class="iconfont">&#xe664;</span>123</span>
+            </span>
+        </a>
+        <a href="" class="game">
+            <span class="game-title-8">
+                <img class="game-img" src="home/活动4.png" alt="">
+            </span>
+            <span class="game-sponsor">主办方:软件学院</span>
+            <span class="game-handle">
+
+                <span style="margin-right: 10px; margin-left: 40px;"><span class="iconfont">&#xe679;</span>123</span>
+
+                <span style="margin-right: 10px;"> <span class="iconfont">&#xe675;</span>123</span>
+
+                <span style="margin-right: 40px; "><span class="iconfont">&#xe664;</span>123</span>
+            </span>
+        </a>
+    </div>
+    <!--社区推荐-->
+    <div class="comunity-title">
+        <a href="#" target="_blank" class="comunity-name">communities</a>
+
+        <a href="#" class="all-game" target="_blank">all competitions&gt;</a>
+
+    </div>
+    <div class="comunity">
+        <div class="colorbar-1"></div>
+        <img src="home/社区1.jpg" alt="" class="comunity-img" />
+        <div class="comunity-text">
+            <div class="comunity-text-title">社区内容1</div>
+            <div style="color: #999;font-size: 12px;line-height: 18px;height: 36px;  word-break: break-all;">
+                sjsjskskssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssssss
+            </div>
+            <div style="color:#c8c8c6;font-size: 12px;">kilsjsjsj</div>
+        </div>
+        <!--评论，点赞-->
+        <div class="comunity-handle">
+            <div style="margin-right:15px">
+                <p class="comunity-read-num">123</p>
+                <p class="comunity-read">read</p>
+            </div>
+            <div style="margin-right:15px">
+                <p class="comunity-favorite-num">123</p>
+                <p class="comunity-favorite">Collect</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="comunity">
+        <div class="colorbar-2"></div>
+        <img src="home/社区2.png" alt="" class="comunity-img" />
+        <div class="comunity-text">
+            <div class="comunity-text-title">社区内容2</div>
+            <div style="color: #999;font-size: 12px;line-height: 18px;height: 35px; word-break: break-all;">sjsjsksk
+            </div>
+            <div style="color:#c8c8c6;font-size: 12px;">kilsjsjsj</div>
+        </div>
+        <div class="comunity-handle">
+            <div style="margin-right:15px">
+                <p class="comunity-read-num">123</p>
+                <p class="comunity-read">read</p>
+            </div>
+            <div style="margin-right:15px">
+                <p class="comunity-favorite-num">123</p>
+                <p class="comunity-favorite">Collect</p>
+            </div>
+        </div>
+    </div>
+    <div class="comunity">
+        <div class="colorbar-3"></div>
+        <img src="home/社区3.jpg" alt="" class="comunity-img" />
+        <div class="comunity-text">
+            <div class="comunity-text-title">社区内容3</div>
+            <div style="color: #999;font-size: 12px;line-height: 18px;height: 35px; word-break: break-all;">sjsjsksk
+            </div>
+            <div style="color:#c8c8c6;font-size: 12px;">kilsjsjsj</div>
+        </div>
+        <div class="comunity-handle">
+            <div style="margin-right:15px">
+                <p class="comunity-read-num">123</p>
+                <p class="comunity-read">read</p>
+            </div>
+            <div style="margin-right:15px">
+                <p class="comunity-favorite-num">123</p>
+                <p class="comunity-favorite">Collect</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!--合作竞赛-->
+    <div class="co-title">
+        <a href="#" target="_blank" class="co-name">officials</a>
+    </div>
+    <div class="join">
+        <a href="#">
+            <img class="join-img" src="home/合作竞赛1.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作竞赛2.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作竞赛3.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作竞赛4.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作竞赛5.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作竞赛6.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作竞赛7.png" alt="">
+        </a>
+    </div>
+    <!--合作机构-->
+    <div class="join-title">
+        <a href="#" target="_blank" class="join-name">organizations</a>
+    </div>
+    <div class="join">
+        <a href="#">
+            <img class="join-img" src="home/合作机构1.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作机构2.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作机构3.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作机构4.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作机构5.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作机构6.png" alt="">
+        </a>
+        <a href="#">
+            <img class="join-img" src="home/合作机构7.png" alt="">
+        </a>
+    </div>
+    <div class="help">
+        <div class="about-web">
+            <div class="about-web-title">关于网站</div>
+            <ul class="about-web-list">
+                <li>了解我们</li>
+                <li>成为合伙人</li>
+                <li>服务协议</li>
+                <li>新闻报道</li>
+            </ul>
+        </div>
+        <div class="help-center">
+            <div class="help-center-title">帮助中心</div>
+            <ul class="help-center-list">
+                <li>常见问题</li>
+                <li>社区规范</li>
+                <li>产品介绍</li>
+            </ul>
+        </div>
+        <div class="attend-us">
+            <div class="attend-us-title">关注我们</div>
+            <ul class="attend-us-list">
+                <li>下载APP</li>
+                <li>微信公众号</li>
+                <li>QQ群</li>
+            </ul>
+        </div>
+        <div class="online-serve">
+            <div class="online-serve-title">在线客服</div>
+            <ul class="online-serve-list">
+                <li>客服QQ</li>
+                <li>客服电话</li>
+                <li>客服微信</li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="jquery-3.5.1/jquery-3.5.1.min.js"></script>
+    <script src="jquery-3.5.1/jquery.cookie.js"></script>
+    <script src="home.js"></script>
+
+</body>
+
+</html>

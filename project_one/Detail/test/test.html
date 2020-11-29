@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <script src="https://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script>
+            var url = location.search; //获取url中"?"符后的字串
+            var theRequest = new Object();
+            if (url.indexOf("?") != -1) {
+                var str = url.substr(1);
+                strs = str.split("&");
+                for(var i = 0; i < strs.length; i ++) {
+                    theRequest[strs[i].split("=")[0]]=decodeURI(strs[i].split("=")[1]);
+                }
+            }
+        
+            var httpRequest = new XMLHttpRequest();//第一步：创建需要的对象
+                httpRequest.open('POST', 'getInfo.php', true); //第二步：打开连接
+                httpRequest.setRequestHeader("Content-type","application/x-www-form-urlencoded");//设置请求头 注：post方式必须设置请求头（在建立连接后设置请求头）
+                httpRequest.send('id='+theRequest['id']);//发送请求 将情头体写在send中
+                var list;
+                /**
+                * 获取数据后的处理程序
+                */
+                
+                httpRequest.onreadystatechange = function () {//请求后的回调接口，可将请求成功后要执行的程序写在其中
+                    if (httpRequest.readyState == 4 && httpRequest.status == 200) {//验证请求是否发送成功
+                        x = document.getElementById("one");
+                        
+                        var json = httpRequest.responseText;//获取到服务端返回的数据
+                        
+                        list = JSON.parse(json);
+                        x.innerHTML = list.gameStart;
+                        
+                        var name = document.getElementById("name")
+                        name.innerHTML = list.gameName
+                        //document.write(json);
+                    }
+                };
+        </script>
+    </head>
+    <body>
+        <h1 id = "name">
+            123
+        </h1>
+        
+        <p id="one">
+            123
+        </p>
+    </body>
+</html>

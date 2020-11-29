@@ -1,0 +1,79 @@
+{
+  "id": "2181898",
+  "name": "icon",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "827650",
+      "name": "评论",
+      "font_class": "pinglun",
+      "unicode": "e664",
+      "unicode_decimal": 58980
+    },
+    {
+      "icon_id": "908497",
+      "name": "收藏",
+      "font_class": "shoucang",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    },
+    {
+      "icon_id": "993786",
+      "name": "搜索",
+      "font_class": "sousuo",
+      "unicode": "e650",
+      "unicode_decimal": 58960
+    },
+    {
+      "icon_id": "3216081",
+      "name": "左",
+      "font_class": "icon--",
+      "unicode": "e717",
+      "unicode_decimal": 59159
+    },
+    {
+      "icon_id": "3216082",
+      "name": "右",
+      "font_class": "icon--1",
+      "unicode": "e718",
+      "unicode_decimal": 59160
+    },
+    {
+      "icon_id": "8236037",
+      "name": "眼睛",
+      "font_class": "yanjing",
+      "unicode": "e679",
+      "unicode_decimal": 59001
+    },
+    {
+      "icon_id": "978354",
+      "name": "微信",
+      "font_class": "gongzhonghao",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "2938663",
+      "name": "谷歌+",
+      "font_class": "icons-guge",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    },
+    {
+      "icon_id": "6756291",
+      "name": "微博",
+      "font_class": "weibo",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "17447541",
+      "name": "推特 twitter",
+      "font_class": "14",
+      "unicode": "e613",
+      "unicode_decimal": 58899
+    }
+  ]
+}
